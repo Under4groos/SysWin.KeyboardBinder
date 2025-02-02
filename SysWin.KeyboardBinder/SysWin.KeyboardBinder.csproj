@@ -6,6 +6,8 @@
     <UseWPF>true</UseWPF>
     <ImplicitUsings>enable</ImplicitUsings>
     <PackageId>SysWin.KeyboardBinder</PackageId>
+    <Copyright>MIT</Copyright>
+    <RepositoryUrl>https://github.com/Under4groos/SysWin.KeyboardBinder</RepositoryUrl>
   </PropertyGroup>
 
 </Project>
