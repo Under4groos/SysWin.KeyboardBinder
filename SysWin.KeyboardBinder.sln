@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.12.35707.178 d17.12
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SysWin.KeyboardBinder", "SysWin.KeyboardBinder/SysWin.KeyboardBinder.csproj", "{80C7162F-B7F2-4BCF-9DD6-71C03BBDAAC7}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Examples", "Examples", "{F6CA5770-3A6A-48C8-8180-A9A6C0BD43E9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinHook.Application", "WinHook.Application\WinHook.Application.csproj", "{5A7EBCBF-BFE7-41B5-8655-0F205F8F36B2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeyboardBinder.Application", "KeyboardBinder.Application\KeyboardBinder.Application.csproj", "{F5F806C9-A79B-4007-B3EF-D93B66BF3C8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80C7162F-B7F2-4BCF-9DD6-71C03BBDAAC7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{80C7162F-B7F2-4BCF-9DD6-71C03BBDAAC7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{80C7162F-B7F2-4BCF-9DD6-71C03BBDAAC7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{80C7162F-B7F2-4BCF-9DD6-71C03BBDAAC7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5A7EBCBF-BFE7-41B5-8655-0F205F8F36B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5A7EBCBF-BFE7-41B5-8655-0F205F8F36B2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5A7EBCBF-BFE7-41B5-8655-0F205F8F36B2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5A7EBCBF-BFE7-41B5-8655-0F205F8F36B2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F5F806C9-A79B-4007-B3EF-D93B66BF3C8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F5F806C9-A79B-4007-B3EF-D93B66BF3C8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F5F806C9-A79B-4007-B3EF-D93B66BF3C8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F5F806C9-A79B-4007-B3EF-D93B66BF3C8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{5A7EBCBF-BFE7-41B5-8655-0F205F8F36B2} = {F6CA5770-3A6A-48C8-8180-A9A6C0BD43E9}
+		{F5F806C9-A79B-4007-B3EF-D93B66BF3C8C} = {F6CA5770-3A6A-48C8-8180-A9A6C0BD43E9}
+	EndGlobalSection
+EndGlobal
