@@ -7,16 +7,16 @@
 using System.Diagnostics;
 using System.Windows;
 using System.Windows.Input;
-using System.Windows.Keyboard.Enums;
-using System.Windows.Keyboard.Structures;
 using System.Windows.Media;
+using SysWin.KeyboardBinder.Enums;
+using SysWin.KeyboardBinder.Structures;
 
 namespace KeyboardBinder.Application.View
-{  
+{
     public partial class MainWindow : Window
     {
         Random random = new Random();
-        System.Windows.Keyboard.KeyboardBinder? keyboardBinder;
+        SysWin.KeyboardBinder.KeyboardBinder? keyboardBinder;
         public MainWindow()
         {
             InitializeComponent();
@@ -25,14 +25,13 @@ namespace KeyboardBinder.Application.View
 
         private void MainWindow_Loaded(object sender, RoutedEventArgs e)
         {
-            keyboardBinder = new System.Windows.Keyboard.KeyboardBinder(this);
+            keyboardBinder = new SysWin.KeyboardBinder.KeyboardBinder(this);
             keyboardBinder.WndProcKeyDown += EventProcKeyDown;
             keyboardBinder.KeyBindingChange += EventKeyBindingChange;
 
             keyboardBinder.Register(WMKeys.MOD_ALT, Key.B);
             // or 
             // keyboardBinder.Register(WMKeys.MOD_ALT, Key.B , 999);
-
             keyboardBinder.Register(WMKeys.MOD_ALT, Key.N);
         }
         protected override void OnClosed(EventArgs e)
@@ -49,9 +48,11 @@ namespace KeyboardBinder.Application.View
             Debug.WriteLine(keyPress);
             if (keyPress.binKey == Key.B)
                 this.Background = new SolidColorBrush(
-                    Color.FromRgb((byte)random.Next(100, 255), (byte)random.Next(100, 255), (byte)random.Next(100, 255)));
+                    Color.FromRgb(
+                        (byte)random.Next(100, 255),
+                        (byte)random.Next(100, 255),
+                        (byte)random.Next(100, 255)));
         }
     }
 }
-
 ```
