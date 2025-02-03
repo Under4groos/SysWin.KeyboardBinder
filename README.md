@@ -1,4 +1,4 @@
-# System.Windows.Keyboard
+# SysWin.KeyboardBinder
 
 ![alt text](https://raw.githubusercontent.com/Under4groos/SysWin.KeyboardBinder/refs/heads/master/images/devenv_leyN4SYzrX.png)
 
